@@ -4,7 +4,9 @@ $allowed = ['http://mtkocak.github.io/contact.html',
 'http://www.mtkocak.com/contact.html',
 'http://mtkocak.com/contact.html'];
 
-if(getenv(in_array(getenv("HTTP_REFERER"),$allowed))){
+$referer = getenv("HTTP_REFERER");
+
+if(getenv(in_array($referer,$allowed))){
         die('don\'t be an jerk, ruin your own site');   
     }
 
@@ -56,4 +58,8 @@ if(!$mail->send()) {
     echo 'Message has been sent';
 }
 
-header('Location:index.html');
+if ( $parts = parse_url($referer ) ) {
+    echo $parts[ "scheme" ] . "://" . $parts[ "host" ];
+}
+
+header('Location:'.$referer.'/index.html');

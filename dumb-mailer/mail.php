@@ -59,7 +59,7 @@ if(!$mail->send()) {
 }
 
 if ( $parts = parse_url($referer ) ) {
-    echo $parts[ "scheme" ] . "://" . $parts[ "host" ];
+    $baseUrl = $parts[ "scheme" ] . "://" . $parts[ "host" ];
 }
 
-header('Location:'.$referer.'/index.html');
+header('Location:'.$baseUrl.'/index.html');

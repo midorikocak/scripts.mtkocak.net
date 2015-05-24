@@ -1,6 +1,8 @@
 <?php
 
 $allowed = ['http://mtkocak.github.io/contact.html',
+    'http://www.mtkocak.com/contact.html#contact-form',
+    'http://mtkocak.github.io/contact.html#contact-form',
 'http://www.mtkocak.com/contact.html',
 'http://mtkocak.com/contact.html'];
 

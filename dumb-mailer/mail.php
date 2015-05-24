@@ -4,7 +4,7 @@ $allowed = ['http://mtkocak.github.io/contact.html',
 'http://www.mtkocak.com/contact.html',
 'http://mtkocak.com/contact.html'];
 
-if(getenv(in_array(getenv("HTTP_REFERER"),$allowed)){
+if(getenv(in_array(getenv("HTTP_REFERER"),$allowed))){
         die('don\'t be an jerk, ruin your own site');   
     }
 

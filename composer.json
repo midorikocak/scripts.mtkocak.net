@@ -1,0 +1,14 @@
+{
+    "name": "root/scripts.mtkocak.net",
+    "description": "Common collection of scripts for static files at mtkocak.net",
+    "require": {
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Midori Koçak",
+            "email": "mtkocak@gmail.com"
+        }
+    ]
+}
